@@ -50,7 +50,7 @@ include "db.php";
 							</div>";
 			}
 			if (isset($_GET["e"])) {
-				echo "<div class='uk-alert-info' uk-alert>
+				echo "<div class='uk-alert-primary' uk-alert>
 									<a class='uk-alert-close' uk-close></a>
 									<p>Item updated.</p>
 							</div>";
@@ -132,7 +132,7 @@ include "db.php";
             </div>
         <p class="uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-            <button class="uk-button uk-button-primary" type="submit">Add</button>
+            <button class="uk-button uk-button-secondary" type="submit">Update Item</button>
         </p>
 				</form>
     </div>
