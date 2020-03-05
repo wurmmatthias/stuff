@@ -1,0 +1,15 @@
+@media print {
+  .action-bar {
+    display: none;
+  }
+
+  nav, nav div {
+    display: none;
+    visibility: hidden;
+  }
+
+  table thead tr:nth-child(4) {
+    display: none;
+    visibility: hidden;
+  }
+}
