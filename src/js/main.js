@@ -18,4 +18,14 @@ $( document ).ready(function() {
     UIkit.modal("#edit-modal").show();
   }
 
+  function CreateExampleStructure() {
+    var a = 0;
+    while (a<=5) {
+      var url = "http://localhost/stuff/add.php?name=Macbook Air&quantity=12&position=Room '" + a;
+      $.ajax({url: url});
+      a++;
+    }
+  }
+
+
 });
