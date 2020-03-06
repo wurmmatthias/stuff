@@ -43,12 +43,17 @@ include "db.php";
 		<div class="uk-container">
 
 			<?php
-			if (isset($_GET["s"])) {
+			if (isset($_GET["s"]) && $_GET["s"] == "1") {
 				echo "<div class='uk-alert-success' uk-alert>
 							    <a class='uk-alert-close' uk-close></a>
 							    <p>Item succesfully added to your inventory.</p>
 							</div>";
-			}
+			} else if (isset($_GET["s"]) && $_GET["s"] == "0") {
+							echo "<div class='uk-alert-danger' uk-alert>
+										    <a class='uk-alert-close' uk-close></a>
+										    <p>An error occured while adding your item.</p>
+										</div>";
+						}
 			if (isset($_GET["e"])) {
 				echo "<div class='uk-alert-primary' uk-alert>
 									<a class='uk-alert-close' uk-close></a>
