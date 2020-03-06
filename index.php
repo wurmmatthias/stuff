@@ -22,7 +22,6 @@ include "db.php";
 	<nav class="uk-navbar-container uk-margin" uk-navbar>
     <div class="uk-navbar-left">
         <a class="uk-navbar-item uk-logo" href="#">Stuff</a>
-
         <ul class="uk-navbar-nav">
             <li>
                 <a href="#" uk-toggle="target: #add-modal">
@@ -91,13 +90,14 @@ include "db.php";
 										echo "</tr>";
 						    }
 						} else {
-						    echo "Bro, you got no stuff.<br> <a class='uk-button uk-button-primary uk-width-1-1' href='add.php?name=Macbook Air&quantity=12&position=Storage'>Generate example stuff.</a>";
+						    echo "<p style='text-align:center;'>Bro, you got no stuff.</p>";
+								echo "<a uk-tooltip='title: Generates example structure to get you started quickly.; pos: bottom' class='uk-button uk-button-secondary uk-width-1-1' href='add.php?name=Macbook Air&quantity=12&position=Storage'>
+								<span uk-icon='icon: move'></span> Generate example stuff.</a>";
 						}
 						$conn->close();
 						?>
 					</tbody>
 			</table>
-
 		</div>
 
 <div id="add-modal" uk-modal>
