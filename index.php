@@ -59,6 +59,12 @@ include "db.php";
 									<p>Item updated.</p>
 							</div>";
 			}
+			if (isset($_GET["d"])) {
+				echo "<div class='uk-alert-warning' uk-alert>
+									<a class='uk-alert-close' uk-close></a>
+									<p>Item successfully <b>deleted</b>.</p>
+							</div>";
+			}
 			?>
 
 			<table class="uk-table uk-table-striped">
